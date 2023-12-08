@@ -11,3 +11,8 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v6
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: HTML report
+          path: ./cypress/reports/
